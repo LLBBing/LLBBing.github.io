@@ -17,6 +17,7 @@ jobs:
       - name: hexo generate
         run: |
           npm i -g hexo
+          npm install hexo-renderer-pug hexo-renderer-stylus --save
           hexo g
 
       - name: Deploy 🚀
