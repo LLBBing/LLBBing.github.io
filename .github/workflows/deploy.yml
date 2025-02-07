@@ -17,6 +17,7 @@ jobs:
       - name: hexo generate
         run: |
           npm i -g hexo
+          git clone -b main https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu
           npm install hexo-renderer-pug hexo-renderer-stylus --save
           hexo g
 
